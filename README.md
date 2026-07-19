@@ -2,7 +2,7 @@
 
 Personal portfolio — [raiyaanahmd.github.io](https://raiyaanahmd.github.io)
 
-Built from scratch with Next.js 14 (static export), TypeScript (strict), Tailwind CSS and Framer Motion. Retro pixel-art space-shooter accents over a modern, minimal layout: dark "Night Ops" default with a light "Day Ops" toggle, a canvas starfield, HUD-style cards and a terminal hero.
+I want the site to feel modern first, with the retro theme acting as a layer of personality rather than the main attraction. Draw inspiration from classic pixel-art space shooters through details like a dark theme, an optional light mode, a subtle animated starfield, HUD-inspired components, and a terminal-style hero section.
 
 ## Develop
 
