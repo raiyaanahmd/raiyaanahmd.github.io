@@ -45,7 +45,7 @@ export function Hero() {
               $ <span className="text-accent">whoami</span>
               {"\n"}
               <span className="text-good">▸</span> computer science student,
-              year 2 of 4{"\n"}$ <span className="text-accent">status</span>{" "}
+              year 2 of 3{"\n"}$ <span className="text-accent">status</span>{" "}
               --current{"\n"}
               <span className="text-good">▸</span> shipping client sites ·
               building{" "}
