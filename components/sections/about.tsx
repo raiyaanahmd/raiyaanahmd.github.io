@@ -9,7 +9,7 @@ export function About() {
       <div className="mx-auto grid max-w-wrap gap-10 px-6 py-24 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <Reveal>
-            <SectionHeader index="01" label="ABOUT" title="Signal, not noise" />
+            <SectionHeader index="01" label="ABOUT" title="A brief Introduction" />
           </Reveal>
         </div>
         <div className="space-y-5 text-[15.5px] leading-relaxed text-text2 lg:col-span-7">

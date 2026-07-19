@@ -20,7 +20,7 @@ export function ThemeToggle() {
       aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
     >
       {mounted && dark ? <Moon size={13} /> : <Sun size={13} />}
-      <span className="hidden sm:inline">{mounted && !dark ? "DAY_OPS" : "NIGHT_OPS"}</span>
+      <span className="hidden sm:inline">{mounted && !dark ? "DAY" : "NIGHT"}</span>
     </button>
   );
 }
