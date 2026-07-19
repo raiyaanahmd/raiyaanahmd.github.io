@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ DESIGN TOKENS ============
+   Dark ("Night Ops") is the default theme.
+   Light ("Day Ops") is re-derived for contrast, not inverted. */
+
+:root {
+  /* Fonts: self-hosted via @fontsource (imported in app/layout.tsx) —
+     zero runtime font requests, no external dependencies. */
+  --font-display: "Space Grotesk Variable", "Space Grotesk", sans-serif;
+  --font-body: "Inter Variable", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", monospace;
+  --font-pixel: "Press Start 2P", monospace;
+}
+
+:root,
+.dark {
+  --bg0: #070b15;
+  --bg1: #0c1222;
+  --bg2: #131c33;
+  --bg3: #1a2440;
+  --line: #1e2a47;
+  --line-bright: #2e3f68;
+  --text1: #e8eef9;
+  --text2: #93a1be;
+  --text3: #7d8fb0; /* ≥4.5:1 on bg0–bg3 (WCAG AA at small sizes) */
+  --accent: #3fe0ff;
+  --accent-hover: #82ebff;
+  --accent-ink: #062733;
+  --purple: #8f7bff;
+  --magenta: #ff4fa3;
+  --green: #3df08c;
+  --amber: #ffb444;
+  --glow: 0 0 0 1px rgba(63, 224, 255, 0.35), 0 0 24px rgba(63, 224, 255, 0.18);
+  --star-opacity: 0.9;
+}
+
+.light {
+  --bg0: #e9edf6;
+  --bg1: #f5f7fc;
+  --bg2: #ffffff;
+  --bg3: #edf1f9;
+  --line: #d5ddec;
+  --line-bright: #afbdd8;
+  --text1: #131b30;
+  --text2: #47567a;
+  --text3: #5a6680; /* ≥4.5:1 on all light backgrounds */
+  --accent: #076c93;
+  --accent-hover: #0b87b4;
+  --accent-ink: #f2fbff;
+  --purple: #6a55e0;
+  --magenta: #d12e7e;
+  --green: #0e9e59;
+  --amber: #b36f14;
+  --glow: 0 0 0 1px rgba(7, 108, 147, 0.3), 0 6px 18px rgba(7, 108, 147, 0.14);
+  --star-opacity: 0.25;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-bg0 text-text1 font-body antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  /* Visible focus for keyboard navigation — accessibility requirement. */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Signature geometry: notched corner clip. */
+  .notch {
+    clip-path: polygon(
+      12px 0,
+      100% 0,
+      100% calc(100% - 12px),
+      calc(100% - 12px) 100%,
+      0 100%,
+      0 12px
+    );
+  }
+  .notch-sm {
+    clip-path: polygon(
+      8px 0,
+      100% 0,
+      100% calc(100% - 8px),
+      calc(100% - 8px) 100%,
+      0 100%,
+      0 8px
+    );
+  }
+
+  /* Pixel section index, e.g. "02 // MISSION LOG" */
+  .pixel-index {
+    @apply font-pixel text-[10px] tracking-[0.14em] text-accent;
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
+  /* Above-the-fold entrance (hero only): pure CSS so the LCP element paints
+     without waiting for the JS bundle. Below-fold sections use Framer's
+     scroll-triggered <Reveal>, which needs JS anyway. */
+  .reveal-css {
+    animation: reveal-rise 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes reveal-rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-css {
+      animation: none;
+    }
+  }
+}
