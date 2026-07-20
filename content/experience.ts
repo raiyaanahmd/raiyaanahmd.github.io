@@ -33,8 +33,8 @@ export const missionLog: LogEntry[] = [
     title: "Administrative Officer",
     org: "High Court of the Maldives",
     summary:
-      "Case registration and document workflows for the Judges' bench — deadline-driven work where accuracy is non-negotiable.",
-    chips: ["case management", "documentation"],
+      "Ran case registration and document workflows in the court's case-management systems for the Judges' bench — high-volume, deadline-driven data work where accuracy is non-negotiable.",
+    chips: ["case management systems", "data workflows"],
   },
   {
     kind: "education",
@@ -50,15 +50,6 @@ export const missionLog: LogEntry[] = [
     summary:
       "Rebuilt the company website to modern standards and brought a decade of project history online; handled IT support alongside.",
     chips: ["web development", "it support"],
-  },
-  {
-    kind: "work",
-    when: "MAR 2022 — OCT 2022",
-    title: "Assistant Procurement Officer (Contract)",
-    org: "Ministry of National Planning, Housing & Infrastructure",
-    summary:
-      "Purchase orders, vendor coordination and records — process discipline at government scale.",
-    chips: ["procurement", "process"],
   },
   {
     kind: "work",
