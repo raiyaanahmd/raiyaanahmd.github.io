@@ -12,7 +12,7 @@ export function Footer() {
           </span>
         </span>
         <span className="font-mono text-[11.5px] text-text3 sm:ml-auto">
-          built with next.js — no templates
+          built from scratch with next.js
         </span>
         <a
           href="#top"

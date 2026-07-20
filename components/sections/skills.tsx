@@ -9,10 +9,11 @@ import { Reveal } from "@/components/shared/reveal";
 
 export function Skills() {
   return (
-    <section className="border-t border-line">
-      <div className="mx-auto max-w-wrap px-6 py-24">
+    <section className="relative border-t border-line">
+      <div aria-hidden="true" className="blueprint-grid absolute inset-0 opacity-[0.35]" />
+      <div className="relative mx-auto max-w-wrap px-6 py-24">
         <Reveal>
-          <SectionHeader index="02" label="LOADOUT" title="Skills" />
+          <SectionHeader tag="LOADOUT" glyph="bars" title="What I work with" />
         </Reveal>
         <div className="grid gap-5 md:grid-cols-3">
           {skillGroups.map((group, i) => (
@@ -32,8 +33,8 @@ export function Skills() {
           ))}
         </div>
         <p className="mt-5 font-mono text-[11.5px] text-text3">
-          <span className="text-warn">*</span> currently learning — used to build
-          this site
+          <span className="text-warn">*</span> still learning this one. this
+          site is how I&apos;m practicing.
         </p>
       </div>
     </section>

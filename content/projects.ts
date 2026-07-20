@@ -33,7 +33,7 @@ export const projects: Project[] = [
     status: "in-development",
     year: "2026",
     oneLiner:
-      "A social scheduling platform that finds overlapping free time — so plans take seconds, not twenty messages.",
+      "An app that compares schedules across your friend group and finds the times everyone is actually free.",
     role: "Designer & developer (solo)",
     stack: [
       "next.js",
@@ -50,16 +50,16 @@ export const projects: Project[] = [
     links: [], // repo/demo links appear here when public
     caseStudy: {
       brief:
-        "SyncSpace makes planning time with friends effortless. Build your own schedule, connect with friends, and instantly see when everyone is actually free.",
+        "SyncSpace is an app I'm building to make planning time with friends less painful. You keep your own schedule, add your friends, and it shows you when everyone is free.",
       problem:
-        "Coordinating a simple meetup usually means a wall of \"when are you free?\" messages across group chats. Everyone's schedule lives in a different place, nobody wants to type it out repeatedly, and plans die in the back-and-forth.",
+        "Planning a simple meetup usually turns into twenty messages of \"when are you free\". Everyone's schedule lives somewhere different, nobody wants to type theirs out again, and half the time the plan just dies.",
       solution:
-        "A shared scheduling space: each person maintains their own recurring schedule once, connects with friends, and SyncSpace computes the overlap — surfacing windows where everyone is free and letting the group lock a plan in seconds.",
+        "Everyone fills in their recurring schedule once. When a group wants to meet, SyncSpace lines the schedules up and shows the windows where everyone is free. Then you just pick one.",
       challenges:
-        "The core problem is deceptively hard: representing recurring availability cleanly, comparing many schedules efficiently, and designing an input UI fast enough that people actually keep their schedules updated.",
+        "The hard part is representing recurring availability without the data model turning into a mess, and making schedule input quick enough that people actually keep theirs up to date.",
       learned:
-        "Scoping an app around one sharp problem instead of feature sprawl, and designing data models before interfaces.",
-      next: "Finish the MVP loop — schedules, connections, overlap view — then open it to a small test group of friends.",
+        "Scoping. My first instinct was to keep adding features. Building around one specific problem, and designing the data model before the screens, has made it much more manageable.",
+      next: "Finish the core loop of schedules, friends and overlaps, then get a small group of friends to actually use it.",
     },
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     status: "deployed",
     year: "2026",
     oneLiner:
-      "Full booking website for a Maldives travel agency — property listings, experiences, and a complete admin panel.",
+      "A booking website for a Maldives travel agency, with property listings, experiences and an admin panel the staff run themselves.",
     role: "Developer",
     stack: ["react", "tailwind css"],
     featured: true,
@@ -76,15 +76,15 @@ export const projects: Project[] = [
     links: [{ label: "live site", href: "https://islaverdemv.com" }],
     caseStudy: {
       brief:
-        "Isla Verde Travel Co sells tailor-made Maldives holidays. The site is their storefront: browsable properties and experiences, a booking flow for guests, and an admin dashboard the agency runs itself.",
+        "Isla Verde is a travel agency in the Maldives selling tailor-made holidays. I built their website, which is both their storefront and the admin system they run the business on.",
       problem:
-        "A travel agency needs more than a brochure — inventory changes, prices move seasonally, and bookings arrive daily. Managing that through a developer for every edit doesn't scale for a small business.",
+        "A travel agency site can't just be a brochure. Prices change with the seasons, properties come and go, and bookings arrive every day. The staff needed to manage all of that without calling a developer for every edit.",
       solution:
-        "A React + Tailwind site with a guest-facing side (properties, amenities, experiences, booking confirmation) and an admin side covering bookings, users, properties, pricing, campaigns and bulk imports — so staff manage everything without touching code.",
+        "There are two sides. Guests browse properties and experiences and make bookings. Staff get an admin panel covering bookings, users, properties, pricing, campaigns and bulk imports, so they can run everything themselves.",
       challenges:
-        "Modelling real inventory (properties, amenities, seasonal pricing) into screens non-technical staff can operate, and keeping the guest flow fast and trustworthy enough for people paying real money.",
+        "Turning real inventory like seasonal pricing and amenities into screens that non-technical staff can use without training. And keeping the guest side fast and trustworthy, because people are paying real money through it.",
       learned:
-        "Building for a paying client changes everything: edge cases, admin ergonomics and content workflows matter as much as the public design.",
+        "Client work is different. Edge cases, admin screens and content workflows matter just as much as the public design. Probably more.",
       next: "Iterating with the client as bookings grow.",
     },
   },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     status: "deployed",
     year: "2025",
     oneLiner:
-      "Corporate site for a Maldives construction & renovation company — services, projects, and brand presence.",
+      "The company website for a Maldives construction and renovation firm. Services, past projects and contact.",
     role: "Developer",
     stack: ["wordpress"],
     featured: false,
@@ -104,9 +104,9 @@ export const projects: Project[] = [
     slug: "blueprint",
     title: "Blueprint Associates",
     status: "ongoing",
-    year: "2022 — PRESENT",
+    year: "2022 – PRESENT",
     oneLiner:
-      "Civil engineering consultancy site with a 15-year project portfolio — rebuilt from a legacy site, still evolving.",
+      "Rebuilt an ageing civil engineering consultancy site and brought 15 years of their projects online. Still evolving.",
     role: "Developer, in collaboration with a senior developer",
     stack: ["web"],
     featured: false,

@@ -7,7 +7,7 @@ import { Reveal } from "@/components/shared/reveal";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Client websites in production and apps in development — case studies included.",
+    "Client websites in production and apps in development, with full write-ups for the featured ones.",
 };
 
 /* n=4 → no filters (they'd be decoration). Featured first, compact after. */
@@ -19,14 +19,11 @@ export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-wrap px-6 pb-24 pt-36">
       <Reveal>
-        <SectionHeader
-          index="04"
-          label="DEPLOYMENTS"
-          title="Projects"
-        />
+<SectionHeader tag="HANGAR" glyph="crosshair" title="Projects" />
         <p className="-mt-4 mb-12 max-w-[56ch] text-[15.5px] text-text2">
-          Real client work in production, plus what I&apos;m building for
-          myself. The featured two have full case studies.
+          Some of this is client work that&apos;s live right now. Some of it
+          is stuff I&apos;m building for myself. The first two have full
+          write-ups.
         </p>
       </Reveal>
       <div className="space-y-6">

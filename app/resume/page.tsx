@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: `Resume of ${site.name} — experience, education and skills.`,
+  description: `Resume of ${site.name}. Experience, education and skills.`,
 };
 
 /* Web resume renders from the same content files as the rest of the site —
@@ -23,7 +23,7 @@ export default function ResumePage() {
   return (
     <div className="mx-auto max-w-wrap px-6 pb-24 pt-36">
       <Reveal>
-        <SectionHeader index="06" label="DOSSIER" title="Resume" className="mb-0" />
+        <SectionHeader tag="DOSSIER" glyph="file" title="Resume" className="mb-0" />
       </Reveal>
 
       <div className="mt-14 grid gap-12 lg:grid-cols-12">

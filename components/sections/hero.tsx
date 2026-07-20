@@ -13,11 +13,7 @@ export function Hero() {
     <section className="mx-auto grid max-w-wrap gap-10 px-6 pb-24 pt-36 lg:grid-cols-12 lg:gap-8">
       <div className="reveal-css min-w-0 lg:col-span-7">
         <div>
-          <p className="font-mono text-xs tracking-[0.14em] text-text3">
-            <span aria-hidden="true">//</span> {site.location.toUpperCase()} ·{" "}
-            {site.timezone}
-          </p>
-          <h1 className="mt-5 font-display text-5xl font-bold tracking-tight text-text1 sm:text-6xl">
+          <h1 className="font-display text-5xl font-bold tracking-tight text-text1 sm:text-6xl">
             {site.name}
           </h1>
           <p className="mt-4 max-w-[54ch] text-lg text-text2">{site.tagline}</p>
@@ -52,8 +48,10 @@ export function Hero() {
               <span className="text-magenta">syncspace</span>
               {"\n"}$ <span className="text-accent">uptime</span>
               {"\n"}
-              <span className="text-good">▸</span> maintaining ministry
-              infrastructure since 2025_
+              <span className="text-good">▸</span> ministry systems, kept
+              online since 2025{"\n"}$ <span className="text-accent">where</span>
+              {"\n"}
+              <span className="text-good">▸</span> malé, maldives · utc+5_
             </span>
           </Terminal>
         </div>

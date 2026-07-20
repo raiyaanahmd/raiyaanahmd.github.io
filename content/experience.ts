@@ -14,50 +14,50 @@ export type LogEntry = {
 export const missionLog: LogEntry[] = [
   {
     kind: "work",
-    when: "JUL 2025 — PRESENT",
+    when: "JUL 2025 – PRESENT",
     title: "Assistant Computer Technician",
     org: "Ministry of Construction, Housing & Infrastructure",
     summary:
-      "Keeping ministry infrastructure online — networks, servers, security systems — while building internal tools that remove manual work and modernising ICT systems.",
+      "I look after the ministry's networks, servers and security systems, and I write small internal tools that replace manual work.",
     chips: ["networking", "servers", "python", "it security"],
   },
   {
     kind: "education",
-    when: "2024 — 2028 (EXPECTED)",
-    title: "BSc (Hons) Computer Science — Year 2",
+    when: "2024 – 2028 (EXPECTED)",
+    title: "BSc (Hons) Computer Science, Year 2",
     org: "Villa College · University of the West of England, Bristol",
   },
   {
     kind: "work",
-    when: "JAN 2024 — JUL 2025",
+    when: "JAN 2024 – JUL 2025",
     title: "Administrative Officer",
     org: "High Court of the Maldives",
     summary:
-      "Ran case registration and document workflows in the court's case-management systems for the Judges' bench — high-volume, deadline-driven data work where accuracy is non-negotiable.",
+      "Handled case registration and document workflows in the court's case-management systems for the Judges' bench. High volume, hard deadlines, and no room for mistakes.",
     chips: ["case management systems", "data workflows"],
   },
   {
     kind: "education",
     when: "2023",
     title: "Certificate 4 in Information Technology",
-    org: "Villa College — CGPA 3.75",
+    org: "Villa College · CGPA 3.75",
   },
   {
     kind: "work",
-    when: "NOV 2022 — OCT 2023",
+    when: "NOV 2022 – OCT 2023",
     title: "Administrative & Computer Technician",
     org: "Blueprint Associates Pvt Ltd",
     summary:
-      "Rebuilt the company website to modern standards and brought a decade of project history online; handled IT support alongside.",
+      "Rebuilt the company website and brought about a decade of old project records online. Handled day-to-day IT support at the same time.",
     chips: ["web development", "it support"],
   },
   {
     kind: "work",
-    when: "NOV 2021 — JUL 2022",
+    when: "NOV 2021 – JUL 2022",
     title: "IT & Technical Intern",
     org: "Next TV / Techno Pvt Ltd",
     summary:
-      "Video editing and graphics for broadcast programs with Premiere Pro, plus general technical support.",
+      "Edited video and made graphics for broadcast shows in Premiere Pro, and helped out with general tech support.",
     chips: ["premiere pro", "graphics"],
   },
 ];

@@ -12,7 +12,7 @@ export const skillGroups: SkillGroup[] = [
   {
     index: "A",
     title: "Web & software",
-    blurb: "Client sites in production, apps in progress.",
+    blurb: "What I build with. Some of it is in production right now.",
     chips: [
       { label: "react" },
       { label: "tailwind css" },
@@ -27,7 +27,7 @@ export const skillGroups: SkillGroup[] = [
   {
     index: "B",
     title: "Systems & networks",
-    blurb: "Production infrastructure at a government ministry.",
+    blurb: "From the ministry job. Real networks with real users on them.",
     chips: [
       { label: "network admin" },
       { label: "servers" },
@@ -41,7 +41,7 @@ export const skillGroups: SkillGroup[] = [
   {
     index: "C",
     title: "Tools & beyond",
-    blurb: "The rest of the toolkit.",
+    blurb: "Everything else I reach for.",
     chips: [
       { label: "git & github" },
       { label: "premiere pro" },

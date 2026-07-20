@@ -9,9 +9,9 @@ export const site = {
   timezone: "UTC+5",
   email: "raiyaanahmd@gmail.com",
   tagline:
-    "I build web software for real clients and keep government infrastructure running.",
+    "I study computer science, build websites for real clients, and keep the computers running at a government ministry.",
   description:
-    "Raiyaan Ahmed — Computer Science student and web developer in Malé, Maldives. Building modern web applications and managing production IT infrastructure.",
+    "Raiyaan Ahmed is a computer science student and web developer from Malé, Maldives. He builds websites for real clients and works in government IT.",
   url: "https://raiyaanahmd.github.io",
   socials: [
     // { label: "github", href: "https://github.com/..." },

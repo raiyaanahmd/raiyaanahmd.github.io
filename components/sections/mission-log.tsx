@@ -13,7 +13,7 @@ export function MissionLog() {
       <div className="mx-auto grid max-w-wrap gap-12 px-6 py-24 lg:grid-cols-12">
         <div className="lg:col-span-8">
           <Reveal>
-            <SectionHeader index="03" label="MISSION LOG" title="Where I've been deployed" />
+            <SectionHeader tag="MISSION LOG" glyph="flag" title="Where I've worked and studied" />
           </Reveal>
           <div className="relative pl-9 before:absolute before:bottom-2 before:left-2 before:top-2 before:w-px before:bg-linebright">
             {missionLog.map((entry, i) => (

@@ -14,7 +14,7 @@ export function FeaturedProjects() {
     <section className="border-t border-line">
       <div className="mx-auto max-w-wrap px-6 py-24">
         <Reveal>
-          <SectionHeader index="04" label="DEPLOYMENTS" title="Selected projects" />
+          <SectionHeader tag="HANGAR" glyph="crosshair" title="Things I've built" />
         </Reveal>
         <div className="space-y-6">
           {featured.map((p, i) => (

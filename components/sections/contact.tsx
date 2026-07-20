@@ -8,27 +8,33 @@ import { Reveal } from "@/components/shared/reveal";
 export function Contact() {
   return (
     <section id="contact" className="border-t border-line">
-      <div className="mx-auto max-w-wrap px-6 py-24">
+      <div className="mx-auto flex max-w-wrap flex-col items-center px-6 py-28 text-center">
         <Reveal>
-          <SectionHeader index="05" label="TRANSMISSION" title="Get in touch" />
+          <SectionHeader
+            tag="COMMS"
+            glyph="antenna"
+            title="Get in touch"
+            className="mb-8 [&>span]:justify-center"
+          />
         </Reveal>
         <Reveal delay={0.06}>
-          <p className="max-w-[52ch] text-[15.5px] leading-relaxed text-text2">
-            Open to internships, junior roles and interesting web projects. The
-            inbox is monitored more reliably than most government servers.
+          <p className="mx-auto max-w-[46ch] text-[15.5px] leading-relaxed text-text2">
+            I&apos;m looking for internships and junior roles, and I&apos;m
+            always up for an interesting project. Email me and I&apos;ll get
+            back to you.
           </p>
         </Reveal>
         <Reveal delay={0.12}>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button variant="primary" href={`mailto:${site.email}`}>
-              Initiate contact
+              Email me
             </Button>
             <span className="font-mono text-[13px] text-text3">{site.email}</span>
           </div>
         </Reveal>
         {site.socials.length > 0 && (
           <Reveal delay={0.18}>
-            <div className="mt-6 flex gap-5">
+            <div className="mt-6 flex justify-center gap-5">
               {site.socials.map((s) => (
                 <a
                   key={s.label}
